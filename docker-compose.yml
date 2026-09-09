@@ -1,0 +1,8 @@
+services:
+  pixshift:
+    build: .
+    container_name: pixshift-converter
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
